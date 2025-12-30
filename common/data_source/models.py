@@ -94,10 +94,8 @@ class Document(BaseModel):
     blob: bytes
     doc_updated_at: datetime
     size_bytes: int
-    externale_access: Optional[ExternalAccess] = None
     primary_owners: Optional[list] = None
     metadata: Optional[dict[str, Any]] = None
-    doc_metadata: Optional[dict[str, Any]] = None
 
 
 class BasicExpertInfo(BaseModel):

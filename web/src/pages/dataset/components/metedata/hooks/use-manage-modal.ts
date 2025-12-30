@@ -129,7 +129,6 @@ export const util = {
   metaDataSettingJSONToMetaDataTableData(
     data: IMetaDataReturnJSONSettings,
   ): IMetaDataTableData[] {
-    if (!Array.isArray(data)) return [];
     return data.map((item) => {
       return {
         field: item.key,

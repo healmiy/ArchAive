@@ -65,7 +65,6 @@ class EvaluationService(CommonService):
             (success, dataset_id or error_message)
         """
         try:
-            timestamp= current_timestamp()
             dataset_id = get_uuid()
             dataset = {
                 "id": dataset_id,
@@ -74,8 +73,8 @@ class EvaluationService(CommonService):
                 "description": description,
                 "kb_ids": kb_ids,
                 "created_by": user_id,
-                "create_time": timestamp,
-                "update_time": timestamp,
+                "create_time": current_timestamp(),
+                "update_time": current_timestamp(),
                 "status": StatusEnum.VALID.value
             }
 

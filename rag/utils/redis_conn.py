@@ -33,7 +33,6 @@ except Exception:
     except Exception:
         REDIS = {}
 
-
 class RedisMsg:
     def __init__(self, consumer, queue_name, group_name, msg_id, message):
         self.__consumer = consumer
@@ -279,8 +278,7 @@ class RedisDB:
     def decrby(self, key: str, decrement: int):
         return self.REDIS.decrby(key, decrement)
 
-    def generate_auto_increment_id(self, key_prefix: str = "id_generator", namespace: str = "default",
-                                   increment: int = 1, ensure_minimum: int | None = None) -> int:
+    def generate_auto_increment_id(self, key_prefix: str = "id_generator", namespace: str = "default", increment: int = 1, ensure_minimum: int | None = None) -> int:
         redis_key = f"{key_prefix}:{namespace}"
 
         try:

@@ -64,8 +64,7 @@ def remote_call(filename, binary):
                     del resume[k]
 
             resume = step_one.refactor(pd.DataFrame([{"resume_content": json.dumps(resume), "tob_resume_id": "x",
-                                                      "updated_at": datetime.datetime.now().strftime(
-                                                          "%Y-%m-%d %H:%M:%S")}]))
+                                                      "updated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}]))
             resume = step_two.parse(resume)
             return resume
         except Exception:
@@ -172,9 +171,6 @@ def chunk(filename, binary=None, callback=None, **kwargs):
 if __name__ == "__main__":
     import sys
 
-
     def dummy(a, b):
         pass
-
-
     chunk(sys.argv[1], callback=dummy)

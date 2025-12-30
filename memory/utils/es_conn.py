@@ -130,7 +130,7 @@ class ESConnection(ESConnectionBase):
 
         exist_index_list = [idx for idx in index_names if self.index_exist(idx)]
         if not exist_index_list:
-            return None, 0
+            return None
 
         bool_query = Q("bool", must=[], must_not=[])
         if hide_forgotten:

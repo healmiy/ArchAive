@@ -18,7 +18,6 @@ class UploadMimeTypes:
         "text/plain",
         "text/markdown",
         "text/x-markdown",
-        "text/mdx",
         "text/x-config",
         "text/tab-separated-values",
         "application/json",

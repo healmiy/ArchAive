@@ -82,7 +82,7 @@ const Preview = ({
           <CSVFileViewer className={className} url={url} />
         </section>
       )}
-      {['md', 'mdx'].indexOf(fileType) > -1 && (
+      {['md'].indexOf(fileType) > -1 && (
         <section>
           <Md className={className} url={url} />
         </section>

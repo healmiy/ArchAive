@@ -46,7 +46,6 @@ class RAGFlowMinio:
                 # pass original identifier forward for use by other decorators
                 kwargs['_orig_bucket'] = original_bucket
             return method(self, actual_bucket, *args, **kwargs)
-
         return wrapper
 
     @staticmethod
@@ -72,7 +71,6 @@ class RAGFlowMinio:
                     fnm = f"{orig_bucket}/{fnm}"
 
             return method(self, bucket, fnm, *args, **kwargs)
-
         return wrapper
 
     def __open__(self):

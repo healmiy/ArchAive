@@ -116,13 +116,10 @@ class UserService(CommonService):
             kwargs["password"] = generate_password_hash(
                 str(kwargs["password"]))
 
-        current_ts = current_timestamp()
-        current_date = datetime_format(datetime.now())
-
-        kwargs["create_time"] = current_ts
-        kwargs["create_date"] = current_date
-        kwargs["update_time"] = current_ts
-        kwargs["update_date"] = current_date
+        kwargs["create_time"] = current_timestamp()
+        kwargs["create_date"] = datetime_format(datetime.now())
+        kwargs["update_time"] = current_timestamp()
+        kwargs["update_date"] = datetime_format(datetime.now())
         obj = cls.model(**kwargs).save(force_insert=True)
         return obj
 

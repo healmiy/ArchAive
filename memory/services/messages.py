@@ -71,7 +71,7 @@ class MessageService:
             filter_dict["session_id"] = keywords
         order_by = OrderByExpr()
         order_by.desc("valid_at")
-        res, total_count = settings.msgStoreConn.search(
+        res = settings.msgStoreConn.search(
             select_fields=[
                 "message_id", "message_type", "source_id", "memory_id", "user_id", "agent_id", "session_id", "valid_at",
                 "invalid_at", "forget_at", "status"
@@ -82,12 +82,13 @@ class MessageService:
             offset=(page-1)*page_size, limit=page_size,
             index_names=index, memory_ids=[memory_id], agg_fields=[], hide_forgotten=False
         )
-        if not total_count:
+        if not res:
             return {
             "message_list": [],
             "total_count": 0
         }
 
+        total_count = settings.msgStoreConn.get_total(res)
         doc_mapping = settings.msgStoreConn.get_fields(res, [
             "message_id", "message_type", "source_id", "memory_id", "user_id", "agent_id", "session_id",
             "valid_at", "invalid_at", "forget_at", "status"
@@ -106,7 +107,7 @@ class MessageService:
         }
         order_by = OrderByExpr()
         order_by.desc("valid_at")
-        res, total_count = settings.msgStoreConn.search(
+        res = settings.msgStoreConn.search(
             select_fields=[
                 "message_id", "message_type", "source_id", "memory_id", "user_id", "agent_id", "session_id", "valid_at",
                 "invalid_at", "forget_at", "status", "content"
@@ -117,7 +118,7 @@ class MessageService:
             offset=0, limit=limit,
             index_names=index_names, memory_ids=memory_ids, agg_fields=[]
         )
-        if not total_count:
+        if not res:
             return []
 
         doc_mapping = settings.msgStoreConn.get_fields(res, [
@@ -135,7 +136,7 @@ class MessageService:
 
         order_by = OrderByExpr()
         order_by.desc("valid_at")
-        res, total_count = settings.msgStoreConn.search(
+        res = settings.msgStoreConn.search(
             select_fields=[
                 "message_id", "message_type", "source_id", "memory_id", "user_id", "agent_id", "session_id",
                 "valid_at",
@@ -148,7 +149,7 @@ class MessageService:
             offset=0, limit=top_n,
             index_names=index_names, memory_ids=memory_ids, agg_fields=[]
         )
-        if not total_count:
+        if not res:
             return []
 
         docs = settings.msgStoreConn.get_fields(res, [
@@ -194,22 +195,23 @@ class MessageService:
         select_fields = ["message_id", "content", "content_embed"]
         _index_name = index_name(uid)
         res = settings.msgStoreConn.get_forgotten_messages(select_fields, _index_name, memory_id)
+        if not res:
+            return []
+        message_list = settings.msgStoreConn.get_fields(res, select_fields)
         current_size = 0
         ids_to_remove = []
-        if res:
-            message_list = settings.msgStoreConn.get_fields(res, select_fields)
-            for message in message_list.values():
-                if current_size < size_to_delete:
-                    current_size += cls.calculate_message_size(message)
-                    ids_to_remove.append(message["message_id"])
-                else:
-                    return ids_to_remove, current_size
-            if current_size >= size_to_delete:
+        for message in message_list.values():
+            if current_size < size_to_delete:
+                current_size += cls.calculate_message_size(message)
+                ids_to_remove.append(message["message_id"])
+            else:
                 return ids_to_remove, current_size
+        if current_size >= size_to_delete:
+            return ids_to_remove, current_size
 
         order_by = OrderByExpr()
         order_by.asc("valid_at")
-        res, total_count = settings.msgStoreConn.search(
+        res = settings.msgStoreConn.search(
             select_fields=select_fields,
             highlight_fields=[],
             condition={},
@@ -238,7 +240,7 @@ class MessageService:
         order_by = OrderByExpr()
         order_by.desc("message_id")
         index_names = [index_name(uid) for uid in uid_list]
-        res, total_count = settings.msgStoreConn.search(
+        res = settings.msgStoreConn.search(
             select_fields=["message_id"],
             highlight_fields=[],
             condition={},
@@ -248,7 +250,7 @@ class MessageService:
             index_names=index_names, memory_ids=memory_ids,
             agg_fields=[], hide_forgotten=False
         )
-        if not total_count:
+        if not res:
             return 1
 
         docs = settings.msgStoreConn.get_fields(res, ["message_id"])

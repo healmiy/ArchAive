@@ -37,7 +37,6 @@ from .teams_connector import TeamsConnector
 from .webdav_connector import WebDAVConnector
 from .moodle_connector import MoodleConnector
 from .airtable_connector import AirtableConnector
-from .asana_connector import AsanaConnector
 from .config import BlobType, DocumentSource
 from .models import Document, TextSection, ImageSection, BasicExpertInfo
 from .exceptions import (
@@ -74,5 +73,4 @@ __all__ = [
     "InsufficientPermissionsError",
     "UnexpectedValidationError",
     "AirtableConnector",
-    "AsanaConnector",
 ]

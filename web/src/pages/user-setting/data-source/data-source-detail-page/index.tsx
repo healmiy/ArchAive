@@ -19,7 +19,7 @@ import {
   DataSourceFormDefaultValues,
   DataSourceFormFields,
   useDataSourceInfo,
-} from '../constant';
+} from '../contant';
 import {
   useAddDataSource,
   useDataSourceResume,
@@ -37,7 +37,7 @@ const SourceDetailPage = () => {
     if (detail) {
       return dataSourceInfo[detail.source];
     }
-  }, [detail, dataSourceInfo]);
+  }, [detail]);
 
   const [fields, setFields] = useState<FormFieldConfig[]>([]);
   const [defaultValues, setDefaultValues] = useState<FieldValues>(
@@ -145,14 +145,14 @@ const SourceDetailPage = () => {
       });
       setFields(newFields);
 
-      const defaultValueTemp = {
+      const defultValueTemp = {
         ...(DataSourceFormDefaultValues[
           detail?.source as keyof typeof DataSourceFormDefaultValues
         ] as FieldValues),
         ...detail,
       };
-      console.log('defaultValue', defaultValueTemp);
-      setDefaultValues(defaultValueTemp);
+      console.log('defaultValue', defultValueTemp);
+      setDefaultValues(defultValueTemp);
     }
   }, [detail, customFields, onSubmit]);
 

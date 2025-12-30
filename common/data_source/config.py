@@ -54,11 +54,7 @@ class DocumentSource(str, Enum):
     DROPBOX = "dropbox"
     BOX = "box"
     AIRTABLE = "airtable"
-    ASANA = "asana"
-    GITHUB = "github"
-    GITLAB = "gitlab"
 
-    
 class FileOrigin(str, Enum):
     """File origins"""
     CONNECTOR = "connector"
@@ -235,8 +231,6 @@ _REPLACEMENT_EXPANSIONS = "body.view.value"
 
 BOX_WEB_OAUTH_REDIRECT_URI = os.environ.get("BOX_WEB_OAUTH_REDIRECT_URI", "http://localhost:9380/v1/connector/box/oauth/web/callback")
 
-GITHUB_CONNECTOR_BASE_URL = os.environ.get("GITHUB_CONNECTOR_BASE_URL") or None
-
 class HtmlBasedConnectorTransformLinksStrategy(str, Enum):
     # remove links entirely
     STRIP = "strip"
@@ -260,10 +254,6 @@ WEB_CONNECTOR_IGNORED_ELEMENTS = os.environ.get(
 
 AIRTABLE_CONNECTOR_SIZE_THRESHOLD = int(
     os.environ.get("AIRTABLE_CONNECTOR_SIZE_THRESHOLD", 10 * 1024 * 1024)
-)
-
-ASANA_CONNECTOR_SIZE_THRESHOLD = int(
-    os.environ.get("ASANA_CONNECTOR_SIZE_THRESHOLD", 10 * 1024 * 1024)
 )
 
 _USER_NOT_FOUND = "Unknown Confluence User"

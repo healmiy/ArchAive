@@ -213,7 +213,7 @@ const MarkdownContent = ({
         return (
           <HoverCard key={i}>
             <HoverCardTrigger>
-              <span className="text-text-secondary bg-bg-card rounded-2xl px-1 mx-1 text-nowrap">
+              <span className="text-text-secondary bg-bg-card rounded-2xl px-1 mx-1">
                 Fig. {chunkIndex + 1}
               </span>
             </HoverCardTrigger>

@@ -191,7 +191,7 @@ def get_credentials_from_env(email: str, oauth: bool = False, source="drive") ->
         DB_CREDENTIALS_AUTHENTICATION_METHOD: "uploaded",
     }
 
-def sanitize_filename(name: str, extension: str = "txt") -> str:
+def sanitize_filename(name: str) -> str:
     """
     Soft sanitize for MinIO/S3:
     - Replace only prohibited characters with a space.
@@ -199,7 +199,7 @@ def sanitize_filename(name: str, extension: str = "txt") -> str:
     - Collapse multiple spaces.
     """
     if name is None:
-        return f"file.{extension}"
+        return "file.txt"
 
     name = str(name).strip()
 
@@ -222,8 +222,9 @@ def sanitize_filename(name: str, extension: str = "txt") -> str:
         base, ext = os.path.splitext(name)
         name = base[:180].rstrip() + ext
 
+    # Ensure there is an extension (your original logic)
     if not os.path.splitext(name)[1]:
-        name += f".{extension}"
+        name += ".txt"
 
     return name
 
