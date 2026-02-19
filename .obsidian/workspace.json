@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tax Acts/Labuan Business Activity Tax Act 1990.md",
+                "file": "Tax Acts/Real Property Gains Tax Act 1976.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Labuan Business Activity Tax Act 1990"
+              "title": "Real Property Gains Tax Act 1976"
             }
           }
         ]
@@ -79,13 +79,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tax Acts/Labuan Business Activity Tax Act 1990.md",
+                "file": "Tax Acts/Real Property Gains Tax Act 1976.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Labuan Business Activity Tax Act 1990"
+              "title": "Outline of Real Property Gains Tax Act 1976"
             }
           }
         ]
@@ -111,20 +111,6 @@
               "icon": "smart-connections",
               "title": "Connections"
             }
-          },
-          {
-            "id": "502f2603eb0a94fb",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Tax Acts/Labuan Business Activity Tax Act 1990.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Labuan Business Activity Tax Act 1990"
-            }
           }
         ]
       }
@@ -134,23 +120,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Open quick switcher": false,
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Smart Lookup: Open lookup view": false,
       "smart-connections:Smart Connections: Open random connection": false,
       "smart-connections:Toggle Inline Connections": false,
       "smart-connections:Toggle Footer Connections": false,
-      "smart-connections:Smart Duplicate Detector": false
+      "smart-connections:Smart Duplicate Detector": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "9688d972a3f1d89d",
   "lastOpenFiles": [
-    "taxless-obsidian-docker",
-    "Tax Acts/Labuan Business Activity Tax Act 1990.sync-conflict-20260219-165816-SSZBNUK.md",
-    "Tax Acts/Real Property Gains Tax Act 1976.md",
-    "Tax Acts/Labuan Business Activity Tax Act 1990.md",
     "Tax Cases/Yu Gim San v. Director General of Inland Revenue.md",
     "Tax Cases/SACSB v. Director General of Inland Revenue.md",
     "Tax Cases/Director General of Inland Revenue v. Tahora Trading Sdn Bhd.md",
+    "Tax Acts/Real Property Gains Tax Act 1976.md",
+    "Tax Acts/Labuan Business Activity Tax Act 1990.md",
+    "taxless-obsidian-docker",
+    "Tax Acts/Labuan Business Activity Tax Act 1990.sync-conflict-20260219-165816-SSZBNUK.md",
     "IRBM, 2025. Transfer Pricing Tax Audit Framework.md",
     "IRBM. 2024. Rangka Kerja Siasatan Cukai.md",
     "IRBM, 2025. Tax Audit Framework on Income Tax and Employer.md",
@@ -165,7 +153,6 @@
     "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-card/index.tsx",
     "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-card/index.less",
     "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-toolbar",
-    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-result-bar",
     "RAGFlow-repo/web/src/assets/svg/llm/wenxin.svg",
     "RAGFlow-repo/web/src/assets/svg/llm/stepfun.svg",
     "RAGFlow-repo/web/src/assets/svg/llm/mineru-dark.svg",
