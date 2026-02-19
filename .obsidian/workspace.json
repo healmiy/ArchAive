@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "79cb98f74f4a9bf1",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bb5ba5e3f1bb178",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9688d972a3f1d89d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tax Acts/Labuan Business Activity Tax Act 1990.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Labuan Business Activity Tax Act 1990"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1dc2473c38ec9dd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "90c0464116a3cfd6",
+        "type": "tabs",
+        "dimension": 54.02726146220571,
+        "children": [
+          {
+            "id": "a8dd2c8131795955",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "64810e775501ef42",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      },
+      {
+        "id": "be9f0733535cb393",
+        "type": "tabs",
+        "dimension": 45.9727385377943,
+        "children": [
+          {
+            "id": "8ac00aece4cba5d3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tax Acts/Labuan Business Activity Tax Act 1990.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Labuan Business Activity Tax Act 1990"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 364
+  },
+  "right": {
+    "id": "843ad7667ed30d77",
+    "type": "split",
+    "children": [
+      {
+        "id": "e3185000d103b9b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc0967c28e547049",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          },
+          {
+            "id": "502f2603eb0a94fb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tax Acts/Labuan Business Activity Tax Act 1990.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Labuan Business Activity Tax Act 1990"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 505.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Toggle Inline Connections": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-connections:Smart Duplicate Detector": false
+    }
+  },
+  "active": "9688d972a3f1d89d",
+  "lastOpenFiles": [
+    "taxless-obsidian-docker",
+    "Tax Acts/Labuan Business Activity Tax Act 1990.sync-conflict-20260219-165816-SSZBNUK.md",
+    "Tax Acts/Real Property Gains Tax Act 1976.md",
+    "Tax Acts/Labuan Business Activity Tax Act 1990.md",
+    "Tax Cases/Yu Gim San v. Director General of Inland Revenue.md",
+    "Tax Cases/SACSB v. Director General of Inland Revenue.md",
+    "Tax Cases/Director General of Inland Revenue v. Tahora Trading Sdn Bhd.md",
+    "IRBM, 2025. Transfer Pricing Tax Audit Framework.md",
+    "IRBM. 2024. Rangka Kerja Siasatan Cukai.md",
+    "IRBM, 2025. Tax Audit Framework on Income Tax and Employer.md",
+    "IRBM, 2021. Rangka Kerja Pungutan Cukai.md",
+    "Tax Acts/IRBM, 2023. Income Tax Act 1967 (Act 53).md",
+    "Tax Acts",
+    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-toolbar/index.tsx",
+    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-creating-modal/tag-feature-item.tsx",
+    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-creating-modal/index.tsx",
+    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-result-bar/index.tsx",
+    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-result-bar/checkbox-sets.tsx",
+    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-card/index.tsx",
+    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-card/index.less",
+    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-toolbar",
+    "RAGFlow-repo/web/src/pages/chunk/parsed-result/add-knowledge/components/knowledge-chunk/components/chunk-result-bar",
+    "RAGFlow-repo/web/src/assets/svg/llm/wenxin.svg",
+    "RAGFlow-repo/web/src/assets/svg/llm/stepfun.svg",
+    "RAGFlow-repo/web/src/assets/svg/llm/mineru-dark.svg",
+    "RAGFlow-repo/web/src/assets/svg/llm/mineru-bright.svg",
+    "RAGFlow-repo/web/src/assets/svg/llm/local-ai.svg",
+    "RAGFlow-repo/web/src/assets/svg/llm/jiekouai.svg",
+    "RAGFlow-repo/web/src/assets/svg/llm/gemini.svg",
+    "RAGFlow-repo/web/src/assets/svg/home-icon/searches.svg",
+    "RAGFlow-repo/web/src/assets/svg/home-icon/searches-bri.svg",
+    "RAGFlow-repo/web/src/assets/svg/home-icon/memory.svg",
+    "RAGFlow-repo/web/README.md",
+    "RAGFlow-repo/SECURITY.md",
+    "RAGFlow-repo/sdk/python/test/test_sdk_api/test_data/test.md",
+    "RAGFlow-repo/sandbox/README.md",
+    "RAGFlow-repo/README.md",
+    "RAGFlow-repo/README_zh.md",
+    "RAGFlow-repo/README_tzh.md",
+    "RAGFlow-repo/README_pt_br.md",
+    "RAGFlow-repo/README_ko.md",
+    "RAGFlow-repo/README_ja.md",
+    "RAGFlow-repo/README_id.md",
+    "RAGFlow-repo/rag/prompts/vision_llm_figure_describe_prompt.md",
+    "RAGFlow-repo/rag/prompts/vision_llm_describe_prompt.md",
+    "RAGFlow-repo/rag/prompts/tool_call_summary.md"
+  ]
+}

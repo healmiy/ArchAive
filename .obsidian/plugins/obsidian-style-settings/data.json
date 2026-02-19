@@ -1,0 +1,16 @@
+{
+  "primary-theme@@alt-folder-icons": true,
+  "primary-theme@@colorful-folders_text": true,
+  "primary-theme@@colorful-folders_collapse-indicator": true,
+  "primary-theme@@colorful-folders_background": true,
+  "primary-theme@@colorful-folders_indentation-guide": true,
+  "primary-theme@@colorful-folders_inherit-color": true,
+  "fastppuccin-theme-settings@@anuppuccin-theme-light": "ctp-rosepine-light",
+  "fastppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-frappe",
+  "fastppuccin-theme-settings@@file-title-color": "inline-title-accent",
+  "retroma-obsidian-theme@@theme-font-selection": "retroma-font-ia-writer-mono",
+  "retroma-obsidian-theme@@theme-color-scheme-selection": "Analogous",
+  "retroma-obsidian-theme@@img-alignment": "img-center",
+  "retroma-obsidian-theme@@theme-variant": "Groovy",
+  "retroma-obsidian-theme@@window-border-radius": "12px"
+}
