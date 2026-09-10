@@ -1,2 +1,18 @@
 .docling
 .DS_Store
+
+# Obsidian & Smart Environment
+.smart-env/
+.obsidian/workspace.json
+
+# AI Agent folders
+skills/
+sessions/
+memory/
+prompts/
+cron/
+triggers/
+AGENTS.md
+HEARTBEAT.md
+SOUL.md
+USER.md
